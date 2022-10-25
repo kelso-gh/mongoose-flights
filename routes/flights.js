@@ -6,6 +6,8 @@ var flightsCtrl = require('../controllers/flights');
 
 // #11 GET /flights (index functionality)
 router.get('/', flightsCtrl.index);
-
+router.get('/new', flightsCtrl.new);
+// GET /flights/:id (this displays the details for a flight)
+router.get('/:id', flightsCtrl.show);
 
 module.exports = router;

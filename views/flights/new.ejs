@@ -1,5 +1,4 @@
 <%- include('../partials/header') %>
-
 <form id="create-flight" action="/flights" method="POST">
     <label>Airport:</label>
     <select name="airport">
@@ -8,16 +7,17 @@
         <option value="DEN">DEN</option>
         <option value="LAX">LAX</option>
         <option value="JFK">JFK</option>
+    </select>
     <label>Airline:</label>
     <select name="airline">
         <option value="AUS">American</option>
         <option value="DFW">Alaska</option>
         <option value="DEN">JetBlue</option>
+    </select>
     <label>Flight No.</label>
-    <input type="number">
+    <input type="number" name="flightNo">
     <label>Departing:</label>
-    <input type="date" name="departing">
-    
+    <input type="date" name="departs">   
 </form>
 
 <%- include('../partials/footer') %>
